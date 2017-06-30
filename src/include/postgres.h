@@ -475,6 +475,10 @@ extern int SyncAgentMain(int, char **, const char *);
 extern void CdbProgramErrorHandler(SIGNAL_ARGS);
 extern void gp_set_thread_sigmasks(void);
 
+uint64 plcontainer_create_call_time = 0;
+uint64 send_time = 0;
+uint64 free_time =0;
+uint64 receive_time = 0;
 
 #ifdef __cplusplus
 }   /* extern "C" */
