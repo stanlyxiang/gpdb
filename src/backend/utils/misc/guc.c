@@ -246,6 +246,15 @@ int			tcp_keepalives_idle;
 int			tcp_keepalives_interval;
 int			tcp_keepalives_count;
 
+uint64 plcontainer_create_call_time =0;
+uint64 send_time=0;
+uint64 free_time=0;
+uint64 receive_time=0;
+uint64 mm1 = 0;
+uint64 mm2 = 0;
+uint64 total_handler_time = 0;
+uint64 pl_tuple_count = 0;
+uint64 qe_delay_time = 0;
 /*
  * These variables are all dummies that don't do anything, except in some
  * cases provide the value for SHOW to display.  The real state is elsewhere

@@ -134,6 +134,15 @@ typedef enum
 extern List    *gp_guc_list_for_explain;
 extern List    *gp_guc_list_for_no_plan;
 
+extern uint64 plcontainer_create_call_time;
+extern uint64 send_time;
+extern uint64 free_time;
+extern uint64 receive_time;
+extern uint64 mm1;
+extern uint64 mm2;
+extern uint64 total_handler_time;
+extern uint64 pl_tuple_count;
+extern uint64 qe_delay_time;
 /* GUC vars that are actually declared in guc.c, rather than elsewhere */
 extern bool log_duration;
 extern bool Debug_print_plan;
