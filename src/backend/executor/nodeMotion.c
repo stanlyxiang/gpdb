@@ -325,6 +325,7 @@ execMotionSender(MotionState * node)
 			elog(LOG, "plcontainerstatperquery prepare_request_time:%llu : sendtime:%llu free_time:%llu : receivetime:%llu(delay:%llu) : convert_charstart2datum:%llu  total_pl_call_handler_time: %llu"
 			               , plcontainer_create_call_time, send_time,free_time, mm1,qe_delay_time,mm2, total_handler_time);
 			    		qe_delay_time=pl_tuple_count = plcontainer_create_call_time = send_time=free_time= mm1=mm2=receive_time= total_handler_time= 0;
+
 			doSendEndOfStream(motion, node);
 			done = true;
 		}
